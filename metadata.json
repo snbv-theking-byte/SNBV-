@@ -1,0 +1,6 @@
+{
+  "name": "SNBV™ Constelación de Todos",
+  "description": "Consola estelar SNBV™, terminal de scripts interactiva y simulador de la flota Naves Espaciales de Colores™.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

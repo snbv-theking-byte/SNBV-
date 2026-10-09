@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-terminal {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Retro Apple 6-color palette variables */
+:root {
+  --apple-green: #61BB46;
+  --apple-yellow: #FDB827;
+  --apple-orange: #F58220;
+  --apple-red: #E03A3E;
+  --apple-purple: #963D97;
+  --apple-blue: #009DDC;
+}
+
+/* Subtle CRT scanline effect */
+.crt-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Radial starry glow */
+.cosmic-radial-glow {
+  background: radial-gradient(circle at 50% 40%, rgba(97, 187, 70, 0.07) 0%, rgba(0, 157, 220, 0.06) 35%, rgba(150, 61, 151, 0.04) 70%, transparent 100%);
+}
+
+/* Custom scrollbar for terminal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d111a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
